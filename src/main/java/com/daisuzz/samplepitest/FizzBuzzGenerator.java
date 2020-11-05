@@ -2,7 +2,7 @@ package com.daisuzz.samplepitest;
 
 public class FizzBuzzGenerator {
 
-    public String generate(Integer number) {
+    public String generate(int number) {
 
         if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
@@ -16,6 +16,6 @@ public class FizzBuzzGenerator {
             return "Buzz";
         }
 
-        return number.toString();
+        return String.valueOf(number);
     }
 }
